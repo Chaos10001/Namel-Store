@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namel store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="header">
+        <div class="head">
+            <h1>Namel Store</h1>
+            <h1 class="describ"></h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#" onclick="homepage()">
+                            <img class="home" src="img/2.png" alt="Home" srcset="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="contact()">
+                            <img class="contact" src="img/3.png" alt="Contact" srcset="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="about()">
+                            <img class="about" src="img/4.png" alt="About us" srcset="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="cart" src="img/cart.png" alt="cart" srcset="">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <img onclick="myFunc()" class="menuTogger" src="./img/menu.png" alt="" srcset="">
+            <div class="menu mobile">
+                <a href="#" onclick="homepage()">Home</a>
+                <a href="#" onclick="contact()">Contact</a>
+                <a href="#" onclick="about()">About</a>
+                <a href="#">Sign Up</a>
+            </div>
+        </div>
+        <article id="content"></article>
+    </section>
+     <section class="greeting">
+        <h3 id="greetings"></h3>
+    </section>
+    <section class="hero">
+        <div class="hero-content">
+            <h3>Namel store</h3>
+            <h2>Giving You The Latest Designs</h2>
+            <h2><span style="color: yellow;">On every Goods we sell</span></h2>            
+            <p>We have the best dress you could ever ask for, ans also giving a discount of 30% off</p>
+        </div>
+        <div class="buttons">
+            <button type="button"><span></span> Now</button>
+            <button type="button"><span></span> Store</button>
+        </div>
+    </section>
+    <section class="search">
+        <h1>Best Product at hand</h1>
+        <form action="">
+            <h3>Search</h3>
+            <input type="text" placeholder="Name of product" id="search-items" onkeyup="search()">
+        </form>
+        <div class="product-list" id="product-list">
+            <div class="product">
+                <img src="img/Screenshot_20220221-223206.png" alt="" srcset="">
+                <div class="product-details">
+                    <h2>Louis Vuitton</h2>
+                    <h4>$20.9</h4>
+                    <div class="stars">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/Screenshot_20220221-223221.png" alt="" srcset="">
+                <div class="product-details">
+                    <h2>Vandela</h2>
+                    <h4>$20.9</h4>
+                    <div class="stars">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/Screenshot_20220221-223235.png" alt="" srcset="">
+                <div class="product-details">
+                    <h2>Monstrol</h2>
+                    <h4>$20.9</h4>
+                    <div class="stars">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/Screenshot_20220221-223302.png" alt="" srcset="">
+                <div class="product-details">
+                    <h2>B-berg</h2>
+                    <h4>$20.9</h4>
+                    <div class="stars">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/Screenshot_20220221-223315.png" alt="" srcset="">
+                <div class="product-details">
+                    <h2>Lint</h2>
+                    <h4 id="tagname">$20.9</h4>
+                    <div class="stars">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/Screenshot_20220221-223337.png" alt="" srcset="">
+                <div class="product-details">
+                    <h2>Hood</h2>
+                    <h4 id="tagname">$20.9</h4>
+                    <div class="stars">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset=""> 
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/Screenshot_20220221-223403.png" alt="" srcset="">
+                <div class="product-details">
+                    <h2>Derla</h2>
+                    <h4>$20.9</h4>
+                    <div class="stars">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/Screenshot_20220221-223422.png" alt="" srcset="">
+                <div class="product-details">
+                    <h2>Minte</h2>
+                    <h4>$20.9</h4>
+                    <div class="stars">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/Screenshot_20220221-223445.png" alt="" srcset="">
+                <div class="product-details">
+                    <h2>Sundrey</h2>
+                    <h4>$20.9</h4>
+                    <div class="stars">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/Screenshot_20220221-223501.png" alt="" srcset="">
+                <div class="product-details">
+                    <h2>Villa</h2>
+                    <h4>$20.9</h4>
+                    <div class="stars">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/Screenshot_20220221-223521.png" alt="" srcset="">
+                <div class="product-details">
+                    <h2>Shirt</h2>
+                    <h4>$20.9</h4>
+                    <div class="stars">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/Screenshot_20220221-223532.png" alt="" srcset="">
+                <div class="product-details">
+                    <h2>Geert</h2>
+                    <h4>$20.9</h4>
+                    <div class="stars">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/Screenshot_20220221-223542.png" alt="" srcset="">
+                <div class="product-details">
+                    <h2>Qulas</h2>
+                    <h4>$20.9</h4>
+                    <div class="stars">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/Screenshot_20220221-223553.png" alt="" srcset="">
+                <div class="product-details">
+                    <h2>Amber</h2>
+                    <h4>$20.9</h4>
+                    <div class="stars">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/Screenshot_20220221-223612.png" alt="" srcset="">
+                <div class="product-details">
+                    <h2>Mazil</h2>
+                    <h4>$20.9</h4>
+                    <div class="stars">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/Screenshot_20220221-223648.png" alt="" srcset="">
+                <div class="product-details">
+                    <h2>Wiget</h2>
+                    <h4>$20.9</h4>
+                    <div class="stars">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        <img src="img/star.png.png" alt="" srcset="">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <section class="slider-container">
+        <h1>Latest Hotties in town</h1>
+        <div class="showslide fade">
+            <img src="img/Screenshot_20220221-223659.png" alt="" srcset="">
+            <div class="content">Lorem ipsum dolor sit amet</div>
+        </div>
+        <div class="showslide fade">
+            <img src="img/Screenshot_20220221-223717.png" alt="" srcset="">
+            <div class="content">Lorem ipsum dolor sit amet</div>
+        </div> <div class="showslide fade">
+            <img src="img/Screenshot_20220221-223739.png" alt="" srcset="">
+            <div class="content">Lorem ipsum dolor sit amet</div>
+        </div>
+        <div class="showslide fade">
+            <img src="img/Screenshot_20220221-223759.png" alt="" srcset="">
+            <div class="content">Lorem ipsum dolor sit amet</div>
+        </div>
+        <div class="showslide fade">
+            <img src="img/Screenshot_20220221-223819.png" alt="" srcset="">
+            <div class="content">Lorem ipsum dolor sit amet</div>
+        </div>
+        <div class="showslide fade">
+            <img src="img/Screenshot_20220221-223832.png" alt="" srcset="">
+            <div class="content">Lorem ipsum dolor sit amet</div>
+        </div>
+        <div class="showslide fade">
+            <img src="img/Screenshot_20220221-223847.png" alt="" srcset="">
+            <div class="content">Lorem ipsum dolor sit amet</div>
+        </div>
+        <div class="showslide fade">
+            <img src="img/Screenshot_20220221-223859.png" alt="" srcset="">
+            <div class="content">Lorem ipsum dolor sit amet</div>
+        </div>
+        <div class="showslide fade">
+            <img src="img/Screenshot_20220221-223932.png" alt="" srcset="">
+            <div class="content">Lorem ipsum dolor sit amet</div>
+        </div>
+        <!-- Navigation arrow -->
+        <a class="left" onclick="nextSlide(-1)">❮</a>  
+        <a class="right" onclick="nextSlide(1)">❯</a>  
+    </section>
+    <section class="message">
+        <h2>Send us an email</h2>
+        <form id="form">
+            <button>Send</button>
+            <input id="message" type="text" placeholder="Send a message">
+        </form>
+        <h4 id="message-content"></h4>
+    </section>
+    <section class="chaos">
+        <div class="cover">
+            <img src="img/o.jpg" alt="img">
+            <h1>C.E.O of Namel Store</h1>
+            <h4>Gabriel Chaos</h4>
+        </div>
+    </section>
+    <footer>
+        <div class="section1">
+            <div class="contact1">
+                <h1>Contact us</h1>
+                <p>Address:Block 678 victory island</p>
+                <p>Hours:24/7, Mon-Sat</p>
+            </div>
+            <div class="follow">
+                <h1>Follow us</h1>
+                <a href="#">
+                    <img id="fb" src="img/facebook logo.jpg" alt="" srcset="">
+                </a>
+                <a href="#">
+                    <img id="twitter" src="img/twitter logo1.jpg" alt="" srcset="">
+                </a>
+                <a href="#">
+                    <img id="youtube" src="img/youtube logo.jpg" alt="" srcset="">
+                </a>
+                <a href="#">
+                    <img id="u" src="img/u logo.jpg" alt="" srcset="">
+                </a>
+                <a href="#">
+                    <img id="ins" src="img/instagram logo.jpg" alt="" srcset="">
+                </a>
+            </div>
+        </div>
+        <div class="section2">
+            <h1>About</h1>
+            <div class="about1">
+                <a href="#">About us</a>
+                <a href="#">Privacy & Policy</a>
+                <a href="#">Delivery of Info</a>
+                <a href="#">Terms&Condition</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        <div class="section3">
+            <h1>My Account</h1>
+            <div class="account">
+                <a href="#">Sign up</a>
+                <a href="#">View cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track my order</a>
+                <a href="#">Help
+                </a>
+            </div>
+        </div>
+        <div class="section4">
+            <h1>Install App</h1>
+            <p>From App store Or Goggle play</p>
+            <div class="playstoreimg">
+                <img src="img/Goggle play.png" alt="">
+                <img src="img/App Store.jpg" alt="">
+                <img src="img/mastercard.jpg" alt="">
+            </div>
+        </div>
+        <p class="foot">@Namec store 2022, Ecomerce site</p>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
