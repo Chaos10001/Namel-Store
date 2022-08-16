@@ -1,11 +1,11 @@
-// var username=window.prompt('Hi may we know your name so as to add u on our customers list').toLocaleUpperCase()
-// var customer='Hi ' + '@' + username + ' Welcome to Namel store'
-// alert(customer)
+var username=window.prompt('Hi may we know your name so as to add u on our customers list').toLocaleUpperCase()
+var customer='Hi ' + '@' + username + ' Welcome to Namel store'
+alert(customer)
 
-// var name_of_customers=document.getElementById('greetings')
+var name_of_customers=document.getElementById('greetings')
 
-// document.getElementById('greetings').innerHTML= 'Hi ' + '@' + username + ' Welcome to Namel store'
-// name_of_customers.style.color='blue'
+document.getElementById('greetings').innerHTML= 'Hi ' + '@' + username + ' Welcome to Namel store'
+name_of_customers.style.color='blue'
 const search=() =>{
     const SearchBox=document.getElementById('search-items').value.toUpperCase()
     const StoreItems=document.getElementById('product-list')
